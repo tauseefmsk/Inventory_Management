@@ -1,0 +1,15 @@
+{
+  "name": "projects_01_inventory_management",
+  "version": "1.0.0",
+  "description": "This is a simple inventory management system which allows users to add items, view items, edit items and delete items. The system uses a local database to store the items.",
+  "main": "additems.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^2.1.3"
+  }
+}
