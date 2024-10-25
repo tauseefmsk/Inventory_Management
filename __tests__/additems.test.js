@@ -29,3 +29,12 @@ describe('addNewItems', () => {
         expect(inventory[inventory.length - 1]).toEqual({ id: 5, name: 'Pineapple', quantity: 2, price: -2.00 });
     });
 });
+    it('should handle adding an item with negative quantity', () => {
+        addNewItems(6, 'Pear', -1, 1.25);
+        expect(inventory[inventory.length - 1]).toEqual({ id: 6, name: 'Pear', quantity: -1, price: 1.25 });
+    });
+
+    it('should handle adding an item with price of zero', () => {
+        addNewItems(7, 'Peach', 2, 0.00);
+        expect(inventory[inventory.length - 1]).toEqual({ id: 7, name: 'Peach', quantity: 2, price: 0.00 });
+    });
